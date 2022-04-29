@@ -1,0 +1,1462 @@
+/*Estilos Universales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos Generales*/
+
+body {
+    font-family: 'Domine', serif;
+}
+
+/*header*/
+header {
+    background-image: url(img/pepas.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/*logo*/
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 18%;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 100%;
+    margin: 5px;
+    border-radius: 15%;
+
+}
+
+.titulo {
+    display: flex;
+    float: center;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+
+    width: 70%;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.subtitulo {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    float: left;
+    padding-left: 20px;
+}
+
+/*nav*/
+.nav ul li {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.nav ul li a:hover {
+    color: black;
+}
+
+.linkActiv {
+    color:#ffbf00;
+}
+
+.buscar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Domine', serif;
+}
+
+input::placeholder {
+    color: #000;
+    width: 90px;
+}
+
+.input {
+    transition: all 2s;
+}
+
+.input:focus {
+    font-size: 30px;
+    border: 3px solid #000;
+    color: #ffbf00;
+}
+
+/*footer*/
+footer {
+    background-image: url(img/pepas.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    object-fit: cover;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+footer p {
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+}
+
+footer i {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: #ffbf00;
+    border: 3px solid #fff;
+    color: #333;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px #000;
+}
+
+/*Estilos Particulares Index*/
+
+/*seccion 1*/
+.seccion1 {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    flex-grow: initial;
+    justify-content: center;
+    width: 100%;
+    color: #000;
+    gap: 5px;
+    align-items: 0 center;
+    height: 100%;
+    width: 100%;
+}
+
+.containerDiv {
+    background-color: honeydew;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 5px 5px 7px 0px rgb(0 0 0 /29%);
+}
+
+.div1 {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+.p {
+    text-align: justify;
+    width: 90%;
+    margin: 2px auto;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.img_sec1 {
+    height: 10rem;
+    width: 100%;
+}
+
+.video_sec1 {
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+}
+
+/*seccion 2*/
+.seccion2 {
+    background-image: url(img/pepas.png);
+    color: #000;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container__imagen {
+    background-color: honeydew;
+    align-items: center;
+    box-shadow: 5px 5px 7px 0px rgb(0 0 0 /29%);
+    width: 100%;
+    height: 100%;
+}
+
+.imagen_sec2 {
+    height: 90%;
+    width: 100%;
+}
+
+.h2_Titulo {
+
+
+    text-shadow: 5px 5px 5px #ccc;
+    animation-duration: 5s;
+    animation-name: titulos;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes titulos {
+
+    0% {
+        opacity: 0.4;
+        color: #ffbf00;
+    }
+
+    50% {
+        opacity: 0.7;
+        color: red;
+    }
+
+    100% {
+        opacity: 1;
+        color: #000;
+    }
+}
+
+/*seccion3 "casa barcelo arte y fe"*/
+
+.seccion3 {
+    background-image: url(img/logo.png);
+    padding: 1px;
+    padding: auto;
+    margin: auto;
+}
+
+.p3 {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.galeria3 {
+    display: grid;
+    align-items: center;
+    min-height: 500px;
+    width: 95%;
+    padding: 1px;
+    gap: 1px;
+}
+
+.img_sec3 {
+    border: 5px solid #fff;
+    height: 100%;
+    width: 100%;
+    color: mintcream;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 1px;
+    transition: all 0.75s;
+}
+
+.img_sec3:hover {
+    transform: scale(1.05);
+    transition: all 0.75s;
+    filter: sepia(100%);
+}
+
+.arteyfe1 {
+    background-color: blueviolet;
+    background-image: url(img/arteyfe1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.arteyfe2 {
+    background-color: darkslategray;
+    background-image: url(img/arteyfe2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.arteyfe3 {
+    background-color: red;
+    background-image: url(img/arteyfe3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.arteyfe4 {
+    background-color: blue;
+    background-image: url(img/arteyfe4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.arteyfe5 {
+    background-color: chartreuse;
+    background-image: url(img/arteyfe5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.arteyfe6 {
+    background-color: burlywood;
+    background-image: url(img/arteyfe6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navSeccion3 {
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.navSeccion3 ul a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    align-items: center;
+}
+
+.navSeccion3 a:hover {
+    color: #ffbf00;
+}
+
+/*Estilos Particulares Nosotros*/
+.h2_subtitulo {
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffbf00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid #fff;
+}
+
+.nosotros {
+    height: 450px;
+    width: 98%;
+    background-color: red;
+    display: flex;
+}
+
+.nleft {
+    width: 50%;
+    background-image: url(img/nosotros.jpg);
+    border: 5px solid #fff;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nleft img {
+    width: 100%;
+}
+
+.nrigth {
+    width: 50%;
+    padding: 10px;
+}
+
+.nrigth h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nrigth p {
+    padding-bottom: 10px;
+    font-size: 7px;
+}
+
+.nrigth a {
+    height: 5px;
+    background-color: #ffbf00;
+    color: #000;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border: 1px solid #000;
+    width: 600;
+}
+
+.nrigth a:hover {
+    background-color: darkorange;
+}
+
+.galeria {
+    display: grid;
+    background-color: red;
+    min-height: 900px;
+    width: 98%;
+    grid-template-rows: repeat(8, 200px);
+    padding: 3%;
+    gap: 3px;
+}
+
+.img {
+    border: 5px solid #fff;
+    height: 200px;
+    color: mintcream;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    transition: all 0.75s;
+    filter: sepia(100%);
+}
+
+.img1 {
+    background-color: blueviolet;
+    background-image: url(img/galeria.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+    background-color: darkslategray;
+    background-image: url(img/vaso.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3 {
+    background-color: red;
+    background-image: url(img/galeria2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4 {
+    background-color: blue;
+    background-image: url(img/galeria5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img5 {
+    background-color: chartreuse;
+    background-image: url(img/galeria3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img6 {
+    background-color: crimson;
+    background-image: url(img/galeria6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img7 {
+    background-color: chocolate;
+    background-image: url(img/dessert3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img8 {
+    background-color: cornflowerblue;
+    background-image: url(img/galeria4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Estilos Particulares Servicios*/
+.servicios {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    padding: auto;
+    margin: 5px auto;
+    color: #000;
+    gap: 5px;
+    align-items: center;
+    font-size: 28px;
+}
+
+.container__imagen {
+    background-color: honeydew;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 5px 5px 7px 0px rgb(0 0 0 /29%);
+}
+
+/*Estilos Particulares Menu*/
+.menu {
+    background-image: url(img/pepas.png);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;    
+}
+
+.tabla_Container {
+    flex-direction: row;    
+    background-color: #ffbf00;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    font-size: 8px;
+    box-shadow: 5px 5px 7px 0px #000;
+}
+
+.animacion1 {
+    animation-name: animacion1;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animacion1 {
+
+    0% {
+        border-radius: 0%;
+        background-color: #ffbf00;
+    }
+
+    35% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+    }
+
+    65% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+        transform: translatey(200px);
+    }
+
+    100% {
+        border-radius: 0%;
+        background-color: #fff;
+    }
+}
+
+.animacion2 {
+    animation-name: animacion2;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animacion2 {
+
+    0% {
+        border-radius: 0%;
+        background-color: #ffbf00;
+    }
+
+    35% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+    }
+
+    65% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+        transform: translatey(200px);
+    }
+
+    100% {
+        border-radius: 0%;
+        background-color: #fff;
+    }
+}
+
+.animacion3 {
+    animation-name: animacion3;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+}
+@keyframes animacion3 {
+
+    0% {
+        border-radius: 0%;
+        background-color: #ffbf00;
+    }
+
+    35% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+    }
+
+    65% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+        transform: translatey(200px);
+    }
+
+    100% {
+        border-radius: 0%;
+        background-color: #fff;
+    }
+}
+
+.animacion4 {
+    animation-name: animacion4;
+    animation-duration: 5s;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animacion4 {
+
+    0% {
+        border-radius: 0%;
+        background-color: #ffbf00;
+    }
+
+    35% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+    }
+
+    65% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+        transform: translatey(200px);
+    }
+
+    100% {
+        border-radius: 0%;
+        background-color: #fff;
+    }
+}
+.animacion5 {
+    animation-name: animacion5;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+}
+@keyframes animacion5 {
+
+    0% {
+        border-radius: 0%;
+        background-color: #ffbf00;
+    }
+
+    35% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+    }
+
+    65% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+        transform: translatey(200px);
+    }
+
+    100% {
+        border-radius: 0%;
+        background-color: #fff;
+    }
+}
+.animacion6 {
+    animation-name: animacion6;
+    animation-duration: 5s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+}
+@keyframes animacion6 {
+
+    0% {
+        border-radius: 0%;
+        background-color: #ffbf00;
+    }
+
+    35% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+    }
+
+    65% {
+        border-radius: 5%;
+        background-color: red;
+        transform: translateX(300px);
+        transform: translatey(200px);
+    }
+
+    100% {
+        border-radius: 0%;
+        background-color: #fff;
+    }
+}
+
+/*Estilos Particulares Reservaciones*/
+.main_reserv {
+    background-image: url(img/pepas.png);
+    display: flex;
+    flex-direction: row;
+    align-content: center;    
+}
+
+.formContainer {
+    background-color: white;
+    width: 75%;    
+    padding: 16px;
+    margin-left: 12%;
+    box-shadow: 5px 5px 7px 0px #333;
+}
+
+.formContainer__title {
+    color: #000;
+    font-size: 24px;
+    margin: 24px;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+}
+
+.form__label {
+    color: #000;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    font-weight: 600;
+}
+
+.form__input,
+.form__texarea {
+    background-color: #ffbf00;
+    width: 60%;
+    margin: 8px;
+    padding: 8px;
+    color: #000;
+    border: none;
+    border-bottom: solid 1px #ffbf00;
+    font-family: 'Domine', serif;
+    font-size: 16px;
+}
+
+.form__texarea {
+    color: #000;
+    height: 80px;
+    resize: none;
+}
+
+.form__input:focus,
+.form__texarea:focus {
+    color: #000;
+    outline: none;
+}
+
+.form__input--submit {
+    color: #000;
+    background-color: #ffbf00;
+    margin-top: 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form__input--submit:hover {
+    background-color: darkgoldenrod;
+}
+
+/*Estilos Particulares Contacto*/
+
+.secContacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+
+.divContacto {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.i {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    animation-name: moto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s;
+
+}
+
+@keyframes moto {
+
+    0% {
+        width: 100px;
+        color: black;
+    }
+
+    20% {
+        width: 120px;
+        color: #ffbf00;
+        padding-left: 20%;
+    }
+
+    40% {
+        width: 140px;
+        color: red;
+        padding-left: 40%;
+    }
+
+    60% {
+        width: 160px;
+        color: black;
+        padding-left: 60%;
+    }
+
+    80% {
+        width: 180px;
+        color: yellow;
+        padding-left: 80%;
+    }
+
+    90% {
+        width: 190px;
+        color: red;
+        padding-left: 90%;
+    }
+
+    100% {
+        width: 200px;
+        color: black;
+        padding-left: 100%;
+    }
+}
+
+#mapa {
+    flex-shrink: initial;
+    width: 100%;
+    height: 100%;
+}
+
+/*Media Queris*/
+
+@media only screen and (min-width:300px) and (max-width:399px) {
+
+    .seccion1 {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .containerDiv {
+        height: 100%;
+        width: 100%;
+    }
+
+    .h2 {
+        font-size: 16px;
+    }
+
+    .p {
+        font-size: 13px;
+    }
+
+    /*Index Sección 2*/
+
+    .seccion2 {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        gap: 1px;
+    }
+
+    .container__imagen {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagen_sec2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Index Sección 3 Casa Barceló Arte y Fe*/
+    .galeria3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 270px 270px 270px;
+    }
+
+    .img_sec3 {
+        height: 100%;
+    }
+
+    /*Nosotros*/
+    .nrigth h3 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .nrigth p {
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .nrigth a {
+        height: 40px;
+        background-color: #ffbf00;
+        color: #000;
+        padding: 4px 10px;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        border: 1px solid #000;
+        font-weight: 600;
+        margin-left: 10%;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px 250px 250px;
+        gap: 7px;
+    }
+
+    .img {
+        height: 250px;
+    }
+
+    /*Menu*/
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu_div {
+        flex-direction: row;
+    }
+
+    .tabla_Container {
+        width: 40%;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width:400px) and (max-width:599px) {
+
+    .seccion1 {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+
+    .containerDiv {
+        height: 100%;
+        width: 30%;
+    }
+
+    .h2 {
+        font-size: 16px;
+    }
+
+    .p {
+        font-size: 13px;
+    }
+
+    /*Index Sección 2*/
+
+    .seccion2 {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        gap: 1px;
+    }
+
+    .container__imagen {
+        width: 46%;
+        height: 100%;
+    }
+
+    .imagen_sec2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Index Sección 3 Casa Barceló Arte y Fe*/
+    .galeria3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 280px 280px;
+    }
+
+    .img_sec3 {
+        height: 100%;
+    }
+
+    /*Nosotros*/
+    .nrigth h3 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .nrigth p {
+        padding-bottom: 10px;
+        font-size: 11.7px;
+    }
+
+    .nrigth a {
+        margin-left: 30%;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px 250px 250px;
+        gap: 8px;
+    }
+
+    .img {
+        height: 250px;
+    }
+
+    .img1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .img2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .img3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .img4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .img5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .img6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .img7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .img8 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+
+    /*Menu*/
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu_div {
+        flex-direction: row;
+    }
+
+    .tabla_Container {
+        width: 40%;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width:600px) and (max-width:799px) {
+
+    /*Index Sección 1*/
+    .seccion1 {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+
+    .containerDiv {
+        height: 100%;
+        width: 30%;
+    }
+
+    /*Index Sección 2*/
+    .seccion2 {
+        flex-direction: row;
+        gap: 1px;
+    }
+
+    .container__imagen {
+        width: 47%;
+        height: 50%;
+    }
+
+    .imagen_sec2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Index Sección 3 Casa Barceló Arte y Fe*/
+    .galeria3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px;
+    }
+
+    .img_sec3 {
+        height: 300px;
+        width: 100%;
+    }
+
+    /*Nosotros*/
+    .nrigth h3 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .nrigth p {
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 310px 310px 310px;
+        gap: 9px;
+    }
+
+    .img {
+        height: 100%;
+    }
+
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .img2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .img3 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .img4 {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    .img5 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .img6 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .img7 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .img8 {
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+
+    /*Menu*/
+    .menu {
+        width: 95%;
+        height: 100%;
+    }
+
+    .menu_div {
+        flex-direction: row;
+    }
+
+    .tabla_Container {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:800px) {
+
+    /*logo*/
+    .logo-container {
+        width: 10%;
+    }
+
+    /*Index Sección 1*/
+    .seccion1 {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .containerDiv {
+        width: 31%;
+        height: 100%;
+    }
+
+    /*Index Sección 2*/
+    .seccion2 {
+        flex-direction: row;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+
+    .container__imagen {
+        width: 30%;
+    }
+
+    .imagen_sec2 {
+        height: 90%;
+        width: 100%;
+    }
+
+
+    /*Index Sección 3 Casa Barceló Arte y Fe*/
+    .galeria3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 350px;
+    }
+
+    .img_sec3 {
+        height: 100%;
+        width: 90%;
+    }
+
+    .arteyfe1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .arteyfe2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .arteyfe3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .arteyfe4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .arteyfe5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .arteyfe6 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    /*Nosotros*/
+    .nrigth h3 {
+        font-size: 18px;
+
+    }
+
+    .nrigth p {
+        font-size: 18px;
+
+    }
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 310px 310px 310px;
+        gap: 9px;
+    }
+
+    .img {
+        height: 100%;
+    }
+
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .img2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .img3 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .img4 {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    .img5 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .img6 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .img7 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .img8 {
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+
+    /*Menu*/    
+
+    .tabla_Container {
+        width: 100%;
+        height: 100%;
+        font-size: 22px;
+    }
+
+    /*Contacto*/
+    .secContacto {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .divContacto {
+        font-size: 24px;
+        width: 40%;
+        height: 40%;
+    }
+
+    #mapa {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="../img/logo.png" />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../estilos.css">
+    <!--link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Domine:wght@500 & display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/1bb6d48af2.js" crossorigin="anonymous"></script>
+    <title>reservaciones</title>
+
+</head>
+
+<body class="body">
+
+    <header>
+        <section>
+            <div class="logo-container">
+                <img src="../img/logo casa barcelo.png" class="logo" />
+            </div>
+            <div>
+                <h1 class="titulo">Casa Barceló Bistró</h1>
+                <h2 class="subtitulo">Con Sabor a Tradición...</h2>
+            </div>
+        </section>
+        <section>
+            <div class="buscar">
+                <label class="buscar" for="buscar" class="buscar">Buscar</label>
+                <input type="serch" placeholder="Serch">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <nav class="nav">
+                    <ul class="ul">
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="../pages/nosotros.html"> NOSOTROS</a></li>
+                        <li><a href="../pages/servicios.html"> SERVICIOS</a></li>
+                        <li><a href="../pages/menu.html"> MENU</a></li>
+                        <li><a class="linkActive" href="../pages/reservaciones.html"> RESERVACIONES</a></li>
+                        <li><a href="../pages/contacto.html"> CONTACTO </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+    <main class="main_reserv">
+        <section class="formContainer">
+            <form action="#" class="form">
+                <fieldset class="formContainer__title">
+                    <legend> <strong> Reservaciones </strong> </legend>
+
+                    <div>
+                        <label class="form__label" for="Usuario">Usuario:</label>
+                        <input class="form__input" type="text" placeholder="Usuario" required>
+
+                        <label class="form__label" for="Contraseña">Contraseña:</label>
+                        <input class="form__input" type="password" placeholder="Contraseña" required>
+                    </div>
+
+                    <div>
+                        <label class="form__label" for="Nombre">Nombre:</label>
+                        <input class="form__input" type="text" placeholder="Nombre" required>
+
+                        <label class="form__label" class="form__label" for="Apellido">Apellido:</label>
+                        <input class="form__input" type="text" name="Apellido" placeholder="Apellido" required>
+
+                        <label class="form__label" for="tel">Teléfono:</label>
+                        <input class="form__input" type="tel" placeholder="tel" required>
+
+                        <label class="form__label" for="Mail">Correo:</label>
+                        <input class="form__input" type="mail" placeholder="Mail" required>
+                    </div>
+
+                    <div>
+                        <h2 class="formContainer__title"> <strong> Reservar una Mesa</strong></h2>
+                        <label class="form__label" for="Fecha">Fecha:</label>
+                        <input class="form__input" type="date" placeholder="Fecha" required>
+
+                        <label class="form__label" for="Hora">Hora:</label>
+                        <input class="form__input" type="time" placeholder="Hora" required>
+
+                        <label class="form__label" for="Numero">Número de Personas</label>
+                        <input class="form__input" type="number" placeholder="N° de Personas" required>
+                    </div>
+                    <div>
+                        <p>En que área prefieres</p>
+                        <label class="form__label" for="area">Salón</label>
+                        <input class="form__input" type="radio" name="area">
+                        <label class="form__label" for="area">Terraza</label>
+                        <input class="form__input" type="radio" name="area">
+                        <label class="form__label" for="area">Launge</label>
+                        <input class="form__input" type="radio" name="area">
+                    </div>
+
+                    <div>
+                        <label class="form__label" for="comentario">Comentarios</label>
+                        <textarea class="form__texarea" name="text" id="" cols="30" rows="5"
+                            placeholder="Déjanos un mensaje"></textarea>
+                    </div>
+
+                    <div>
+                        <input class="form__input form__input--submit" type="submit" value="Enviar">
+                        <input class="form__input form__input--submit" type="reset" value="Borrar">
+                        <input class="form__input form__input--submit" type="button" value="Botón">
+                    </div>
+                    <div>
+                        <input class="form__input" type="checkbox" name="Acepto los terminos" required>
+                        <label class="form__label" for="">Acepto los terminos</label>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <nav class="nav">
+                <ul class="nav ul">
+                    <li><a href="../index.html" class="linkActive">INICIO</a></li>
+                    <li><a href="../pages/nosotros.html"> NOSOTROS</a></li>
+                    <li><a href="../pages/servicios.html"> SERVICIOS</a></li>
+                    <li><a href="../pages/menu.html"> MENU</a></li>
+                    <li><a class="linkActive" href="../pages/reservaciones.html"> RESERVACIONES</a></li>
+                    <li><a href="../pages/contacto.html"> CONTACTO </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>Todos los derechos reservados por Copyright Casa Barcelo Bistro® - 2022. Privaci Policy. Policy
+                Cookies.
+                Defensa de las y los consumidores.</p>
+        </div>
+        <div>
+            <p> Sígenos en nuestras Redes Sociales</p>
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://es-la.facebook.com/login/device-based/regular/login/"><i
+                    class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/accounts/emailsignup/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <a href="#" class="subir"><i class="fa-solid fa-angle-up"></i></a>
+
+</body>
+
+</html>
