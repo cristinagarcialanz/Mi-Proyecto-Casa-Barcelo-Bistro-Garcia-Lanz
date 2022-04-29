@@ -165,7 +165,7 @@ footer i {
 
 /*seccion 1*/
 .seccion1 {
-    background-color: red;
+    background-image: url(img/pepas.png);
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
